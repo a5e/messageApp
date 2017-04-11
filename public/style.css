@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #ddd;
+  font-family: sans-serif;
+}
+.Chat {
+  position: relative;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  background: #fff;
+}
+.MessageList {
+  padding: 10px;
+  height: 350px;
+  overflow: scroll;
+  border-bottom: 5px solid #ddd;
+}
+.AddMessage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+}
+form {
+  padding: 0;
+}
+.AddMessage input[type="text"] {
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  width: 80%;
+  padding-left: 10px;
+}
+.AddMessage button[type="submit"] {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #FFF;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+}
