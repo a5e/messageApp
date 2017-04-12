@@ -10,8 +10,13 @@ import name from './name'
 
 import { localStorageMiddleware, createStorageListener} from './middlewares/localStorage';
 
-sessionStorage.setItem('name', name)
-sessionStorage.setItem('color', color)
+if (!sessionStorage.getItem('name')) {
+  sessionStorage.setItem('name', name)
+}
+if (!sessionStorage.getItem('color')) {
+  sessionStorage.setItem('color', color)
+}
+
 
 const initialMessages = () => {
   if (!localStorage.getItem('messages')) {
