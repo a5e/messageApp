@@ -15,6 +15,7 @@ sessionStorage.setItem('color', color)
 
 const initialMessages = () => {
   if (!localStorage.getItem('messages')) {
+    localStorage.setItem('messages', JSON.stringify([]))
     return []
   }
   return JSON.parse(localStorage.getItem('messages'))
